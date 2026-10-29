@@ -44,6 +44,7 @@ The objective is to explore how different values of `k` (the number of nearest n
 - Achieved **100% accuracy** on the held-out test set in this experiment.
 
 The manual 10-fold cross-validation and GridSearchCV used different cross-validation settings, which can lead to different optimal values of k.
+
 ## How to Run
 
 1. Open `Homework_3_Iris.ipynb` in Jupyter Notebook or Google Colab.
