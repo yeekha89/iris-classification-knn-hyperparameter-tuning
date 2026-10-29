@@ -29,19 +29,21 @@ The objective is to explore how different values of `k` (the number of nearest n
 
 **Initial 10-Fold Cross-Validation**
 
-The highest mean cross-validation accuracy was **98%**, achieved with several values of `k`, including 13, 18, and 20.
+- Tested KNN values from 1 to 30 using training data.
+- Highest mean cross-validation accuracy: approximately **96.3%**.
+- Best-performing value: **k = 11**.
 
 **GridSearchCV Hyperparameter Tuning**
 
-- Best parameter identified: `k = 1`
-- Best cross-validation accuracy: **95.24%**
+- Best parameter: **k = 1**
+- Best 5-fold cross-validation accuracy: **95.24%**
 
 **Test Set Evaluation**
 
-A separately trained KNN model using `k = 13` achieved **100% accuracy** on the test split in this experiment.
+- Evaluated the GridSearchCV-selected parameter, **k = 1**.
+- Achieved **100% accuracy** on the held-out test set in this experiment.
 
-The initial cross-validation analysis and GridSearchCV evaluation used different data configurations, so their accuracy scores should not be interpreted as directly comparable.
-
+The manual 10-fold cross-validation and GridSearchCV used different cross-validation settings, which can lead to different optimal values of k.
 ## How to Run
 
 1. Open `Homework_3_Iris.ipynb` in Jupyter Notebook or Google Colab.
